@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: red;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .header,
+      .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: #ffffff;
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+        height: 300px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .img-container {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+      }
+
+      .flex-container .box {
+        background-color: #f1f1f1;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#news" class="active">News</a></li>
+      <li><a href="#contact" class="active">Contact</a></li>
+      <li><a href="#about" class="active">About</a></li>
+    </ul>
+
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li>The Flight</li>
+          <li>The City</li>
+          <li>The Island</li>
+          <li>The Food</li>
+        </ul>
+      </div>
+      <div class="column content">
+        <h1>The City</h1>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+        <p>
+          You will learn more about web layout and responsive web pages in a
+          later chapter.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Footer Text</p>
+    </div>
+
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+    <div class="clearfix">
+      <div class="box" style="background-color: #bbb">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ccc">
+        <p>Some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ddd">
+        <p>Some text inside the box.</p>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <p>
+      <strong>Note:</strong> Here, we use the clearfix hack to take care of the
+      layout flow. We also use the box-sizing property to make sure that the box
+      doesn't break due to extra padding. Try to remove this code to see the
+      effect.
+    </p>
+
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side:</p>
+
+    <div class="clearfix">
+      <div class="img-container">
+        <img src="/laptop.jpg.jpg" alt="laptop" style="width: 100%;"
+        height=300px">
+      </div>
+      <div class="img-container">
+        <img
+          src="/mtn.jpg.jpg.png"
+          alt="Mtn"
+          style="width: 100%"
+          height="320px"
+        />
+      </div>
+      <div class="img-container">
+        <img
+          src="/sqpurple.gif"
+          alt="Purple"
+          style="width: 100%"
+          height="300px"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <p>
+      Note that we also use the clearfix hack to take care of the layout flow,
+      and that we add the box-sizing property to make sure that the image
+      container doesn't break due to extra padding. Try to remove this code to
+      see the effect.
+    </p>
+
+    <h1>Flexible Boxes</h1>
+    <div class="flex-container">
+      <div class="box">
+        Box 1 - This is some text to make sure that the content gets really
+        tall. This is some text to make sure that the content gets really tall.
+      </div>
+      <div class="box">Box 2 - My height will follow Box 1.</div>
+    </div>
+
+    <p>Try to resize the browser window to see the flexible layout.</p>
+    <p>
+      <strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or
+      earlier versions.
+    </p>
+  </body>
+</html>
