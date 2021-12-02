@@ -27,19 +27,37 @@
         font-size: 22px;
       }
 
-      div {
+      .mouse{
   background-color: green;
   color: white;
   padding: 25px;
   text-align: center;
 }
 
-div:hover {
+.mouse:hover {
   background-color: blue;
 }
-p:first-child {
+.text > p:first-child {
   color: blue;
 }
+.text1 {
+  color: blue;
+}
+
+.text2{
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.element:hover .text2 {
+  display: block;
+}
+
+q:lang(no) {
+  quotes: "~" "~";
+}
+
     </style>
   </head>
   <body>
@@ -68,14 +86,34 @@ p:first-child {
 
     <p><a href="/css-position.html">CSS Tutorial</a></p>
   
-    <p>Mouse over the div element below to change its background color:</p>
+    <p>Mouse over the div element below to change its background color:
+    </p>
 
-<div>Mouse Over Me</div>
+<div class="mouse">Mouse Over Me</div>
 
 
+<p class="text1">This is some text.</p>
 <p>This is some text.</p>
-<p>This is some text.</p>
+<div class="text">
+  <p>This is some text.</p>
+  <p>This is some text.</p>
+</div>
 
 
-  </body>
+
+
+<div class="element">Hover over this div element to show the p element
+  <p class="text2">Tada! Here I am!</p>
+</div>
+
+
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<br>  
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+</body>
 </html>
