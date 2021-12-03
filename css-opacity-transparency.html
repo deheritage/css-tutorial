@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img:hover {
+                opacity: 0.5;
+            }div {
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+
+div.background {
+    background: url(./mountain.jpg);
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+        </style>
+    </head>
+    <body>
+        
+        <h1>Image Transparency</h1>
+        <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+        <p>Image with 50% opacity:</p>
+        <img src="./bridge.jpg" alt="bridge" width="170" height="100">
+        <img src="./island.jpg" alt="island" width="170" height="">
+        <img src="./paris.jpg" alt="paris" width="170" height="100">
+    
+    
+<h1>Transparent Box</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1 (default)</p></div>
+<br><br><br>
+
+<div class="background">
+    <div class="transbox">
+        <p>This is some text that is placed in the transparent box.</p>
+    </div>
+</div>
+    </body>
+</html>
