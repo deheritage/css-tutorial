@@ -2,16 +2,71 @@
 <html>
 <head>
 <style>
+  #navlist {
+    position: relative;
+  }
+
+  #navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #navlist li, #navlist a {
+    height: 44px;
+    display: block;
+  }
+
 #home {
+  left: 63px;
   width: 46px;
-  height: 44px;
-  background: url(img_navsprites.gif) 0 0;
+  background: url(./sprites.jpg) 0 0;
 }
 
-#next {
+
+#prev {
+  left: 63px;
   width: 43px;
-  height: 44px;
-  background: url(img_navsprites.gif) -91px 0;
+  background: url(./sprites.jpg) -47px 0;
 }
+
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url(./sprites.jpg) -91px 0;
+}
+
+
+
+#home a:hover {
+  background: url(./sprites.jpg) 0 -45px;
+}
+
+
+#prev a:hover {
+  background: url(./sprites.jpg) 0 -45px;
+}
+
+
+#next a:hover {
+  background: url(./sprites.jpg) 0 -45px;
+}
+
 </style>
 </head>
+<body>
+  <ul id="navlist">
+    <li id="home"><a href="./how-to-add-css.html"></a>
+    </li>
+
+    <li id="prev"><a href="./css-syntax.html"></a>
+    </li>
+
+    <li id="next"><a href="./css-selectors.html"></a>
+    </li>
+  </ul>
+</body>
+</html>
