@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #ex5 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px black;
+      }
+
+      #ex1 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px grey;
+      }
+
+      #ex2 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px 5px grey;
+      }
+
+      #ex3 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px 5px 12px grey;
+      }
+
+      #ex4 {
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        background-color: yellow;
+        box-shadow: 10px 10px 5px grey inset;
+      }
+
+      #example1 {
+        width: 300px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+        margin: 20px;
+      }
+
+      #example2 {
+        width: 300px;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+        margin: 20px;
+      }
+
+      div.card {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+      }
+
+      div.header {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        font-size: 40px;
+      }
+
+      div.container {
+        padding: 10px;
+      }
+
+      div.polaroid {
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+      }
+
+      div.container {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The box-shadow Property</h1>
+
+    <div id="ex5">This is a div element with a box-shadow</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div id="ex1">A div element with a grey box-shadow</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div id="ex2">A div element with a 5px blurred, grey box-shadow.</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div id="ex3">
+      A div element with a blurred, grey box-shadow, with a spread radius of
+      12px.
+    </div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div id="ex4">A div element with a blurred, grey, inset box-shadow.</div>
+
+    <h1>Multiple Shadows</h1>
+
+    <div id="example1">
+      <h2>Multiple shadows</h2>
+      <p>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</p>
+    </div>
+    <br />
+
+    <div id="example2">
+      <h2>Multiple shadows with blur effect</h2>
+      <p>
+        box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:
+      </p>
+    </div>
+
+    <h1>Create Cards</h1>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="card">
+      <div class="header">
+        <h1>1</h1>
+      </div>
+
+      <div class="container">
+        <p>January 1, 2021</p>
+      </div>
+    </div>
+
+    <h1>Create Polaroid Images</h1>
+
+    <p>The box-shadow property can be used to create polaroid images:</p>
+
+    <div class="polaroid">
+      <img src="/island.jpg" alt="Norway" style="width: 100%" />
+      <div class="container">
+        <p>Hardanger, Norway</p>
+      </div>
+    </div>
+  </body>
+</html>
