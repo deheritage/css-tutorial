@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .u {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+      }
+
+      @keyframes example {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: yellow;
+        }
+      }
+
+      .d {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: examp;
+        animation-duration: 4s;
+      }
+
+      @keyframes examp {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: blue;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+
+      .e {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: exam;
+        animation-duration: 4s;
+      }
+
+      @keyframes exam {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .g {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: examples;
+        animation-duration: 4s;
+        animation-delay: -2s;
+      }
+
+      @keyframes examples {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .f {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: exampe;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+      }
+
+      @keyframes exampe {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .j {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: examle;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes examle {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .k {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: eample;
+        animation-duration: 4s;
+        animation-direction: reverse;
+      }
+
+      @keyframes eample {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .l {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: exampless;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+      }
+
+      @keyframes exampless {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .m {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: exampled;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse;
+      }
+
+      @keyframes exampled {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      div {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 5s infinite;
+      }
+
+      #div1 {
+        animation-timing-function: linear;
+      }
+      #div2 {
+        animation-timing-function: ease;
+      }
+      #div3 {
+        animation-timing-function: ease-in;
+      }
+      #div4 {
+        animation-timing-function: ease-out;
+      }
+      #div5 {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+
+      .p {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: exampleds;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes exampleds {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 200px;
+          background-color: blue;
+        }
+      }
+
+      .v {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: exampler;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes exampler {
+        from {
+          top: 0px;
+          background-color: yellow;
+        }
+        to {
+          top: 200px;
+        }
+      }
+
+      .t {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation-name: examplet;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes examplet {
+        from {
+          top: 0px;
+          background-color: yellow;
+        }
+        to {
+          top: 200px;
+          background-color: blue;
+        }
+      }
+
+      .r {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: examplem;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes examplem {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+
+      .b {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: myfirst 5s linear 2s infinite alternate;
+      }
+
+      @keyframes myfirst {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Animation</h1>
+    <div class="u"></div>
+
+    <p>
+      <b>Note:</b>When an animation is finished, it goes to back to its original
+      style.
+    </p>
+
+    <h1>CSS Animation</h1>
+
+    <div class="d"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+
+    <h1>CSS Animation</h1>
+
+    <div class="e"></div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      Using negative values in the animation-delay property: Here, the animation
+      will start as if it had already been playing for 2 seconds:
+    </p>
+
+    <div class="g"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-iteration-count property specifies the number of times an
+      animation should run. The following example will run the animation 3 times
+      before it stops:
+    </p>
+
+    <div class="f"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-iteration-count property can be set to infinite to let the
+      animation run for ever:
+    </p>
+
+    <div class="j"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-direction property specifies whether an animation should be
+      played forwards, backwards or in alternate cycles. The following example
+      will run the animation in reverse direction (backwards):
+    </p>
+
+    <div class="k"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-direction property specifies whether an animation should be
+      played forwards, backwards or in alternate cycles. The following example
+      uses the value "alternate" to make the animation run forwards first, then
+      backwards:
+    </p>
+
+    <div class="l"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-direction property specifies whether an animation should be
+      played forwards, backwards or in alternate cycles. The following example
+      uses the value "alternate-reverse" to make the animation run backwards
+      first, then forwards:
+    </p>
+
+    <div class="m"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      The animation-timing-function property specifies the speed curve of the
+      animation. The following example shows some of the different speed curves
+      that can be used:
+    </p>
+
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      Let the div element retain the style values set by the last keyframe when
+      the animation ends:
+    </p>
+
+    <div class="p"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      Let the div element get the style values set by the first keyframe before
+      the animation starts (during the animation-delay period):
+    </p>
+
+    <div class="v"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>
+      Let the div element get the style values set by the first keyframe before
+      the animation starts, and retain the style values from the last keyframe
+      when the animation ends:
+    </p>
+
+    <div class="t"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>This example uses six of the animation properties:</p>
+
+    <div class="r"></div>
+
+    <h1>CSS Animation</h1>
+
+    <p>This example uses the shorthand animation property:</p>
+
+    <div class="b"></div>
+  </body>
+</html>
