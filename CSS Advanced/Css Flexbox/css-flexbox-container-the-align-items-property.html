@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        background-color: DodgerBlue;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containers {
+        display: flex;
+        height: 200px;
+        align-items: flex-start;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containers > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containerss {
+        display: flex;
+        height: 200px;
+        align-items: flex-end;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containerss > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containered {
+        display: flex;
+        height: 200px;
+        align-items: stretch;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containered > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containeree {
+        display: flex;
+        height: 200px;
+        align-items: baseline;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containeree > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containersd {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containersd > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containerr {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containerr > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containersr {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: stretch;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containersr > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containerg {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containerg > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containergg {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containergg > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containereg {
+        display: flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        overflow: scroll;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containereg > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+
+      .flex-containerb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-color: DodgerBlue;
+      }
+
+      .flex-containerb > div {
+        background-color: #f1f1f1;
+        color: white;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The align-items Property</h1>
+
+    <p>
+      The "align-items: center;" aligns the flex items in the middle of the
+      container:
+    </p>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h1>The align-items Property</h1>
+
+    <p>
+      The "align-items: flex-start;" aligns the flex items at the top of the
+      container:
+    </p>
+
+    <div class="flex-containers">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h1>The align-items Property</h1>
+
+    <p>
+      The "align-items: flex-end;" aligns the flex items at the bottom of the
+      container:
+    </p>
+
+    <div class="flex-containerss">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h1>The align-items Property</h1>
+
+    <p>
+      The "align-items: stretch;" stretches the flex items to fill the container
+      (this is default):
+    </p>
+
+    <div class="flex-containered">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h1>The align-items Property</h1>
+
+    <p>
+      The "align-items: baseline;" aligns the flex items such as their baselines
+      aligns:
+    </p>
+
+    <div class="flex-containeree">
+      <div><h1>1</h1></div>
+      <div><h6>2</h6></div>
+      <div><h3>3</h3></div>
+      <div><small>4</small></div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: space-between;" displays the flex lines with equal
+      space between them:
+    </p>
+
+    <div class="flex-containersd">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: space-around;" displays the flex lines with space
+      before, between, and after them:
+    </p>
+
+    <div class="flex-containerr">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: stretch;" stretches the flex lines to take up the
+      remaining space (this is default):
+    </p>
+
+    <div class="flex-containersr">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: center;" displays the flex lines in the middle of the
+      container:
+    </p>
+
+    <div class="flex-containerg">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: flex-start;" displays the flex lines at the start of
+      the container:
+    </p>
+
+    <div class="flex-containergg">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: flex-end;" displays the flex lines at the end of the
+      container:
+    </p>
+
+    <div class="flex-containereg">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <h1>Perfect Centering</h1>
+
+    <p>
+      A flex container with both the justify-content and the align-items
+      properties set to <em>center</em> will align the item(s) in the center (in
+      both axis).
+    </p>
+
+    <div class="flex-containerb">
+      <div></div>
+    </div>
+  </body>
+</html>

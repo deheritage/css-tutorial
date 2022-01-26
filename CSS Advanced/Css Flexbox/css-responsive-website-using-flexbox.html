@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+<body>
+<!-- Note --> 
+<div style="background: yellow; padding: 5px;">
+<h4 style="text-align: center;">Resize the browser window to see the responsive effect.</h4>
+</div>
+
+
+
+<!-- Header -->
+<div class="header">
+    <h1>My Website</h1>
+    <p>With  <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Contact Us</a>
+
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+    <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <img src="/photo.jpg" alt="photo" style="height: 200px;"></div>
+       <p>This is my homepage, so I have to say something about myself. Sometimes it is hard to introduce yourself because you know yourself so well that you do not know where to start with. Let me give a try to see what kind of image you have about me through my self-description. I hope that my impression about myself and your impression about me are not so different. </p>
+       
+        <h3>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen.</h3>
+    <p>Instead of thinking of all the things that can go wrong, become one of the people who look on how they go right. Your mind is powerful, and when you fill it with positivity your life naturally becomes positive. When you think positive thoughts, positive things will happen.</p>
+
+        <img src="/heart.jpg" alt="photo" style="height: 300px;"></div>
+       <img src="/heart3.jpg" alt="photo" style="height:200px;"></div>
+      <img src="/heart4.jpg" alt="photo" style="height:200px;"></div>
+      </div>
+      <div class="main">
+        <h2>Autobiography</h2>
+        <h5>On Wednesday, 26 2017</h5>
+        <img src="/heart5.jpg" alt="photo" style="height:300px;"></div>
+        <p>If someone eliminates the obstacles you believe to be in front of you, then you have no choice but to try. Fail spectacularly, if you will, but try.
+            Life is rarely so simple. It's hardly ever all bad or all good. </p>
+        <p>It's ultimately an uplifting tale that reminds us to focus on the positive, find the support we need, and keep moving forward.</p>
+
+        
+        <h2>The Lost Land Quote</h2>
+        <h5>Wednesday, 26 2017</h5>
+        <img src="/lsnd.jpg" alt="photo" style="height:200px;"></div>
+        <p>“This is what language is:
+            a habitual grief. A turn of speech
+            for the everyday and ordinary abrasion
+            of losses such as this:
+            which hurts
+            just enough to be a scar
+            And heals just enough to be a nation.”
+            ― Eavan Boland, The Lost Land: Poems..</p>
+        <p>Land reform was once a key component of development strategies but has fallen from favor. The popularity of the policy reflected a diversity of beliefs regarding its positive impact on productive efficiency, distributional equity, political, social, and economic structures.</p>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+    <footer>
+      <div class="rounded-social-buttons">
+                        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+    </footer>
+
+    </div>
+</div>
+
+
+</body>
+</html>
